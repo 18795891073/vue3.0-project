@@ -1,0 +1,61 @@
+.header {
+  width: 1680px;
+  height: 10vh;
+  line-height: 10vh;
+  min-width: 380px;
+  margin: 0 auto;
+}
+
+.login_bg {
+  width: 1680px;
+  height: 650px;
+  background: url("@/assets/images/bg.png") no-repeat top;
+  border-width: 1.5px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.login_frame {
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  position: absolute;
+  top: 75px;
+  left: 975px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding: 50px;
+  box-shadow: 0px 0px 5px 2px #999;
+}
+
+.footer {
+  height: 10vh;
+  line-height: 10vh;
+  text-align: center;
+}
+
+.footer ul {
+  margin: 80px 0 30px 120px;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 10px;
+  font-size: 13px;
+  color: #777;
+}
+
+ul li:hover {
+  color: #999;
+  cursor: pointer;
+}
+
+.code_cover {
+  display: inline-block;
+  width: 248px;
+  height: 32px;
+  border: 1px solid #81858a33;
+  background: #fff;
+  margin-left: 13px;
+}
