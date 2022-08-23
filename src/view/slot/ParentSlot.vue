@@ -1,7 +1,7 @@
 <template>
   <div>
     <p style="color: #333">父组件：插槽</p>
-    <Child>
+    <ChildSlot>
       <!-- 默认插槽 -->
       <div style="color: #0ff; font-size: 20px">这是父组件中的文本1</div>
       <!-- 具名插槽 -->
@@ -15,7 +15,7 @@
       <template v-slot:three="slotProps">
         <div>{{ slotProps.isAllwo }}</div>
       </template>
-    </Child>
+    </ChildSlot>
     <!-- 如何显示带有标签的文本 -->
     <div>{{ this.text }}</div>
     <div v-html="this.text"></div>
@@ -23,7 +23,7 @@
   <div></div>
 </template>
 <script>
-import Child from "@/components/NewComponent.vue";
+import ChildSlot from "./ChildSlot.vue";
 export default {
   data() {
     return {
@@ -31,7 +31,7 @@ export default {
     };
   },
   components: {
-    Child,
+    ChildSlot,
   },
   watch: {
     list: {

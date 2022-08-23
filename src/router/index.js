@@ -4,14 +4,19 @@ import { createRouter, createWebHashHistory } from "vue-router";
 const routes = [
   {
     path: "/",
+    name: "main",
+    component: () => import("@/view/MainTem.vue")
+  },
+  {
+    path: "/login",
     name: "login",
     component: () => import("@/view/login/IndexTem.vue")
   },
-  {
-    path: "/main",
-    name: "main",
-    component: () => import("@/view/MainTem.vue")
-  }
+  // {
+  //   path: "/main",
+  //   name: "main",
+  //   component: () => import("@/view/MainTem.vue")
+  // }
 ]
 
 const router = createRouter({
