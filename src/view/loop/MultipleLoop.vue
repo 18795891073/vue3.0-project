@@ -1,5 +1,5 @@
 <template>
-    <div @click="onClick" class="cover">
+    <div id="loop" @click="onClick" class="cover">
       比较forEach和.map两种遍历方式
     </div>
 </template>
@@ -25,6 +25,7 @@ components: {},
    computed:{},
   methods: {
     onClick() {
+      window.location = '#anchor';
       // forEach循环无返回值，或者说返回值为undefined
       // this.arr.forEach((item, index, arr) => {
       //   console.log('111 ===', item, '222 ===', index, '333 ===', arr)

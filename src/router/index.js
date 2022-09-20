@@ -16,7 +16,12 @@ const routes = [
     path: "/loop",
     name: "循环",
     component: () => import("@/view/loop/MultipleLoop.vue")
-  }
+  },
+  {
+    path: "/anchor",
+    name: "锚点",
+    component: () => import("@/view/anchorPoint/AnchorPoint.vue")
+  },
 ]
 
 const router = createRouter({
